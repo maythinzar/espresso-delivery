@@ -1,0 +1,11 @@
+name: Deploy Web App to GAE
+
+on:
+  push:
+    branches: [main, ci_cd]
+  workflow_dispatch:
+
+#jobs:
+#  build_web:
+#    name: Build Flutter (Web)
+#    runs-on: ubuntu-latest
