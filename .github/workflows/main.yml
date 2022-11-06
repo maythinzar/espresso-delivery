@@ -26,6 +26,7 @@ jobs:
 
   deploy_web:
     name: Deploy Flutter (Web)
+    needs: build_web
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
