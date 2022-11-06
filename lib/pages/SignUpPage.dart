@@ -292,7 +292,7 @@ class FacebookGoogleLogin extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: 10.0),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment. center,
             children: <Widget>[
               Container(
                 decoration: BoxDecoration(
