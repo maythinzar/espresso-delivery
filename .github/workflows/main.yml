@@ -5,7 +5,20 @@ on:
     branches: [main, ci_cd]
   workflow_dispatch:
 
-#jobs:
-#  build_web:
-#    name: Build Flutter (Web)
-#    runs-on: ubuntu-latest
+jobs:
+  build_web:
+    name: Build Flutter (Web)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: subosito/flutter-action@v1
+      with:
+          channel: 'dev'
+    - run: flutter pub get
+    - run: flutter config --enable-web
+    - run: flutter build web
+    - name: Archive Production Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: web-build
+        path: build/web
