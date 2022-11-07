@@ -265,8 +265,8 @@ class PopularFoodItems extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: <Widget>[
         PopularFoodTiles(
-            name: "Fried Egg",
-            imageUrl: "ic_popular_food_1",
+            name: "Cappuccino",
+            imageUrl: "ic_popular_food_3",
             rating: '4.9',
             numberOfRating: '200',
             price: '15.06',
@@ -331,5 +331,3 @@ class PopularFoodItems extends StatelessWidget {
     );
   }
 }
-
-
